@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { StoryType } from "@/utils/types";
 import { CategoryType } from "./Hero";
 import Link from "next/link";
 import OneCategoryPost from "./oneCategoryPost";
