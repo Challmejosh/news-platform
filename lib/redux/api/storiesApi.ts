@@ -8,7 +8,12 @@ export const storiesApi = createApi({
     endpoints: (builder) => ({
         getStories: builder.query<MiniStoryType[], void>({
             query: () => 'stories/',
-            transformResponse: (response) => response.data.data,
+            transformResponse: (response:{
+                message:string;
+                data:{
+                    data:MiniStoryType
+                }
+            }[]) => response.data.data,
         }),
     }),
 });
