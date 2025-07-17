@@ -1,5 +1,5 @@
 "use client";
-
+import { useQuery } from "@tanstack/react-query"
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";
