@@ -70,7 +70,7 @@ const Hero = ({search,set,showInput,setShowInput}:Prop) => {
         return "loading"
     }
     return ( 
-        <div className="flex lg:flex-col items-center lg:items-start justify-between w-full h-full lg:h-[421px] bg-[#1B1B1B] ">
+        <div className="p-3 lg:p-0 flex lg:flex-col items-center lg:items-start justify-between w-full h-full lg:h-[421px] bg-[#1B1B1B] ">
             {/* desktop version */}
             <>
                 {/* top nav */}
