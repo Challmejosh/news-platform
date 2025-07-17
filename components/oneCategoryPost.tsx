@@ -64,8 +64,8 @@ const OneCategoryPost = ({id: categoryId}:{id:number}) => {
     return ( 
         <>
             {story&&(
-                <div className="border-y border-y-[#C8C8C8] text-[#5A5A5A] flex flex-col lg:flex-row items-start justify-center gap-4">
-                    <div  className="relative flex flex-col items-start justify-start gap-2 h-full border-r border-r-[#C8C8C8] w-full rounded-sm ">
+                <div className="border-y p-1 border-y-[#C8C8C8] text-[#5A5A5A] flex flex-col lg:flex-row items-start justify-center gap-4">
+                    <div  className="relative flex flex-col items-start p-1 justify-start gap-2 h-full border-r border-r-[#C8C8C8] w-full ">
                         <Bookmark className="cursor-pointer text-black absolute top-3 right-3" onClick={()=>dispatch(toggleBookmark(story))}  />
                         <Link href={`/stories/${story.id}`} className="w-full">
                             <Image src={story?.banner_image} alt={story.banner_image} width={250} height={200} className="rounded-[2px] w-full h-full object-fill lg:object-cover object-center " />
